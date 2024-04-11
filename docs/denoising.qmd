@@ -1,0 +1,10 @@
+---
+title: "Denoising Electrophysiology"
+author: "P. M. Thompson"
+bibliography: references.bib
+format:
+  html:
+    code-fold: true
+---
+
+Use high impedance or open circuit electrodes

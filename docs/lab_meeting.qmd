@@ -1,0 +1,16 @@
+---
+title: "Lab Meeting Checklist"
+author: "P. M. Thompson"
+bibliography: references.bib
+format:
+  html:
+    code-fold: true
+---
+
+### Histology
+
+Place colored labels
+
+### Plots
+
+Use Superplots to represent differences in variability across animals / days

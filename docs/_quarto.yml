@@ -10,6 +10,8 @@ website:
         text: Home
       - about.qmd
       - spikesorter_tutorial.qmd
+      - lab_meeting.qmd
+      - denoising.qmd
 
 format:
   html:

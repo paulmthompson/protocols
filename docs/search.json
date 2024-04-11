@@ -40,5 +40,19 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "denoising.html",
+    "href": "denoising.html",
+    "title": "Denoising Electrophysiology",
+    "section": "",
+    "text": "Use high impedance or open circuit electrodes"
+  },
+  {
+    "objectID": "lab_meeting.html",
+    "href": "lab_meeting.html",
+    "title": "Lab Meeting Checklist",
+    "section": "",
+    "text": "Histology\nPlace colored labels\n\n\nPlots\nUse Superplots to represent differences in variability across animals / days"
   }
 ]
