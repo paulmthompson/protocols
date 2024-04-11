@@ -1,13 +1,15 @@
 project:
   type: website
+  output-dir: .
 
 website:
-  title: "docs"
+  title: "Protocols"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - spikesorter_tutorial.qmd
 
 format:
   html:
