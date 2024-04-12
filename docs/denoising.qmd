@@ -1,5 +1,5 @@
 ---
-title: "Denoising Electrophysiology"
+title: "De-noising for Electrophysiology"
 author: "P. M. Thompson"
 bibliography: references.bib
 format:
@@ -7,4 +7,82 @@ format:
     code-fold: true
 ---
 
-Use high impedance or open circuit electrodes
+## Background
+
+### Extracellular Voltage
+
+How signal is generated
+
+How signal is quantified
+
+peak-to-peak voltage for extracellular recordings
+
+### Noise
+
+How noise is generated
+
+How noise is quantified
+
+RMS noise vs peak-to-peak noise
+
+Noise is *additive* so what
+
+### Electronics
+
+Common Mode Rejection Ratio (CMRR)
+
+## Power
+
+Switch mode power supplies are extremely noisy - best to use linear bench power supplies when possible
+
+## Grounding and Isolation
+
+### Faraday Cage
+
+Only works if noise sources are *outside* the faraday cage. @sec-electronics-inside-the-cage
+
+### Ensure components are actually connected
+
+Aluminum oxide coating is *not* conductive and will need to be removed if you expect components to connect together. Particularly troublesome components:
+
+For large components: use sand paper to remove paint layer
+
+For small components: soak in bleach for several hours
+
+| Component            | Best removal                                                             |
+|------------------|------------------------------------------------------|
+| Black Thorlabs parts | Bleach                                                                   |
+| Aluminum breadboard  | Sandpaper around specific holes where you wish to connect grounding wire |
+| Electronics Rack     | Sandpaper around holes, and connect together with wires.                 |
+
+: Common Components With Aluminum Oxide
+
+### Make sure all cables are plugged in
+
+A long wire is an antenna.
+
+Particularly bad are long wires running from the outside to inside to your experiment (@sec-case-ungrounded-cables).
+
+Unplugging unused electronic equipment may seem like a good idea, but unplugged power cables will be in the noisiest region (hot side) of the electronic rack, and consequently pick up large amounts of noise @sec-unplugged-power-cables
+
+### Computers
+
+## Testing
+
+Use high impedance or open circuit electrodes. An electrode with infinite impedance is a perfect antenna
+
+## Case Studies
+
+### Components inside the Cage {#sec-electronics-inside-the-cage}
+
+Lights
+
+Lasers
+
+Experimental Control
+
+### Ungrounded Camera and Lighting {#sec-case-ungrounded-cables}
+
+### Unplugged Power Cables {#sec-unplugged-power-cables}
+
+Noisy ground then radiates into cold side of the rack through ground BNC terminals

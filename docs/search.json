@@ -44,9 +44,9 @@
   {
     "objectID": "denoising.html",
     "href": "denoising.html",
-    "title": "Denoising Electrophysiology",
+    "title": "De-noising for Electrophysiology",
     "section": "",
-    "text": "Use high impedance or open circuit electrodes"
+    "text": "How signal is generated\nHow signal is quantified\npeak-to-peak voltage for extracellular recordings\n\n\n\nHow noise is generated\nHow noise is quantified\nRMS noise vs peak-to-peak noise\nNoise is additive so what\n\n\n\nCommon Mode Rejection Ratio (CMRR)"
   },
   {
     "objectID": "lab_meeting.html",
@@ -54,5 +54,40 @@
     "title": "Lab Meeting Checklist",
     "section": "",
     "text": "Histology\nPlace colored labels\n\n\nPlots\nUse Superplots to represent differences in variability across animals / days"
+  },
+  {
+    "objectID": "denoising.html#background",
+    "href": "denoising.html#background",
+    "title": "De-noising for Electrophysiology",
+    "section": "",
+    "text": "How signal is generated\nHow signal is quantified\npeak-to-peak voltage for extracellular recordings\n\n\n\nHow noise is generated\nHow noise is quantified\nRMS noise vs peak-to-peak noise\nNoise is additive so what\n\n\n\nCommon Mode Rejection Ratio (CMRR)"
+  },
+  {
+    "objectID": "denoising.html#power",
+    "href": "denoising.html#power",
+    "title": "De-noising for Electrophysiology",
+    "section": "Power",
+    "text": "Power\nSwitch mode power supplies are extremely noisy - best to use linear bench power supplies when possible"
+  },
+  {
+    "objectID": "denoising.html#grounding-and-isolation",
+    "href": "denoising.html#grounding-and-isolation",
+    "title": "De-noising for Electrophysiology",
+    "section": "Grounding and Isolation",
+    "text": "Grounding and Isolation\n\nFaraday Cage\nOnly works if noise sources are outside the faraday cage. Section 5.1\n\n\nEnsure components are actually connected\nAluminum oxide coating is not conductive and will need to be removed if you expect components to connect together. Particularly troublesome components:\nFor large components: use sand paper to remove paint layer\nFor small components: soak in bleach for several hours\n\nCommon Components With Aluminum Oxide\n\n\n\n\n\n\nComponent\nBest removal\n\n\n\n\nBlack Thorlabs parts\nBleach\n\n\nAluminum breadboard\nSandpaper around specific holes where you wish to connect grounding wire\n\n\nElectronics Rack\nSandpaper around holes, and connect together with wires.\n\n\n\n\n\nMake sure all cables are plugged in\nA long wire is an antenna.\nParticularly bad are long wires running from the outside to inside to your experiment (Section 5.2).\nUnplugging unused electronic equipment may seem like a good idea, but unplugged power cables will be in the noisiest region (hot side) of the electronic rack, and consequently pick up large amounts of noise Section 5.3\n\n\nComputers"
+  },
+  {
+    "objectID": "denoising.html#testing",
+    "href": "denoising.html#testing",
+    "title": "De-noising for Electrophysiology",
+    "section": "Testing",
+    "text": "Testing\nUse high impedance or open circuit electrodes. An electrode with infinite impedance is a perfect antenna"
+  },
+  {
+    "objectID": "denoising.html#case-studies",
+    "href": "denoising.html#case-studies",
+    "title": "De-noising for Electrophysiology",
+    "section": "Case Studies",
+    "text": "Case Studies\n\nComponents inside the Cage\nLights\nLasers\nExperimental Control\n\n\nUngrounded Camera and Lighting\n\n\nUnplugged Power Cables\nNoisy ground then radiates into cold side of the rack through ground BNC terminals"
   }
 ]

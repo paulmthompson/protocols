@@ -8,7 +8,7 @@
 
 <meta name="author" content="P. M. Thompson">
 
-<title>Protocols - Denoising Electrophysiology</title>
+<title>Protocols - De-noising for Electrophysiology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./denoising.html" rel="" target="" aria-current="page">
- <span class="menu-text">Denoising Electrophysiology</span></a>
+ <span class="menu-text">De-noising for Electrophysiology</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -114,14 +114,40 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a>
+  <ul class="collapse">
+  <li><a href="#extracellular-voltage" id="toc-extracellular-voltage" class="nav-link" data-scroll-target="#extracellular-voltage">Extracellular Voltage</a></li>
+  <li><a href="#noise" id="toc-noise" class="nav-link" data-scroll-target="#noise">Noise</a></li>
+  <li><a href="#electronics" id="toc-electronics" class="nav-link" data-scroll-target="#electronics">Electronics</a></li>
+  </ul></li>
+  <li><a href="#power" id="toc-power" class="nav-link" data-scroll-target="#power">Power</a></li>
+  <li><a href="#grounding-and-isolation" id="toc-grounding-and-isolation" class="nav-link" data-scroll-target="#grounding-and-isolation">Grounding and Isolation</a>
+  <ul class="collapse">
+  <li><a href="#faraday-cage" id="toc-faraday-cage" class="nav-link" data-scroll-target="#faraday-cage">Faraday Cage</a></li>
+  <li><a href="#ensure-components-are-actually-connected" id="toc-ensure-components-are-actually-connected" class="nav-link" data-scroll-target="#ensure-components-are-actually-connected">Ensure components are actually connected</a></li>
+  <li><a href="#make-sure-all-cables-are-plugged-in" id="toc-make-sure-all-cables-are-plugged-in" class="nav-link" data-scroll-target="#make-sure-all-cables-are-plugged-in">Make sure all cables are plugged in</a></li>
+  <li><a href="#computers" id="toc-computers" class="nav-link" data-scroll-target="#computers">Computers</a></li>
+  </ul></li>
+  <li><a href="#testing" id="toc-testing" class="nav-link" data-scroll-target="#testing">Testing</a></li>
+  <li><a href="#case-studies" id="toc-case-studies" class="nav-link" data-scroll-target="#case-studies">Case Studies</a>
+  <ul class="collapse">
+  <li><a href="#sec-electronics-inside-the-cage" id="toc-sec-electronics-inside-the-cage" class="nav-link" data-scroll-target="#sec-electronics-inside-the-cage">Components inside the Cage</a></li>
+  <li><a href="#sec-case-ungrounded-cables" id="toc-sec-case-ungrounded-cables" class="nav-link" data-scroll-target="#sec-case-ungrounded-cables">Ungrounded Camera and Lighting</a></li>
+  <li><a href="#sec-unplugged-power-cables" id="toc-sec-unplugged-power-cables" class="nav-link" data-scroll-target="#sec-unplugged-power-cables">Unplugged Power Cables</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Denoising Electrophysiology</h1>
+<h1 class="title">De-noising for Electrophysiology</h1>
 </div>
 
 
@@ -142,9 +168,101 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Use high impedance or open circuit electrodes</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<section id="extracellular-voltage" class="level3">
+<h3 class="anchored" data-anchor-id="extracellular-voltage">Extracellular Voltage</h3>
+<p>How signal is generated</p>
+<p>How signal is quantified</p>
+<p>peak-to-peak voltage for extracellular recordings</p>
+</section>
+<section id="noise" class="level3">
+<h3 class="anchored" data-anchor-id="noise">Noise</h3>
+<p>How noise is generated</p>
+<p>How noise is quantified</p>
+<p>RMS noise vs peak-to-peak noise</p>
+<p>Noise is <em>additive</em> so what</p>
+</section>
+<section id="electronics" class="level3">
+<h3 class="anchored" data-anchor-id="electronics">Electronics</h3>
+<p>Common Mode Rejection Ratio (CMRR)</p>
+</section>
+</section>
+<section id="power" class="level2">
+<h2 class="anchored" data-anchor-id="power">Power</h2>
+<p>Switch mode power supplies are extremely noisy - best to use linear bench power supplies when possible</p>
+</section>
+<section id="grounding-and-isolation" class="level2">
+<h2 class="anchored" data-anchor-id="grounding-and-isolation">Grounding and Isolation</h2>
+<section id="faraday-cage" class="level3">
+<h3 class="anchored" data-anchor-id="faraday-cage">Faraday Cage</h3>
+<p>Only works if noise sources are <em>outside</em> the faraday cage. <a href="#sec-electronics-inside-the-cage">Section&nbsp;5.1</a></p>
+</section>
+<section id="ensure-components-are-actually-connected" class="level3">
+<h3 class="anchored" data-anchor-id="ensure-components-are-actually-connected">Ensure components are actually connected</h3>
+<p>Aluminum oxide coating is <em>not</em> conductive and will need to be removed if you expect components to connect together. Particularly troublesome components:</p>
+<p>For large components: use sand paper to remove paint layer</p>
+<p>For small components: soak in bleach for several hours</p>
+<table class="table">
+<caption>Common Components With Aluminum Oxide</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Best removal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Black Thorlabs parts</td>
+<td>Bleach</td>
+</tr>
+<tr class="even">
+<td>Aluminum breadboard</td>
+<td>Sandpaper around specific holes where you wish to connect grounding wire</td>
+</tr>
+<tr class="odd">
+<td>Electronics Rack</td>
+<td>Sandpaper around holes, and connect together with wires.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="make-sure-all-cables-are-plugged-in" class="level3">
+<h3 class="anchored" data-anchor-id="make-sure-all-cables-are-plugged-in">Make sure all cables are plugged in</h3>
+<p>A long wire is an antenna.</p>
+<p>Particularly bad are long wires running from the outside to inside to your experiment (<a href="#sec-case-ungrounded-cables">Section&nbsp;5.2</a>).</p>
+<p>Unplugging unused electronic equipment may seem like a good idea, but unplugged power cables will be in the noisiest region (hot side) of the electronic rack, and consequently pick up large amounts of noise <a href="#sec-unplugged-power-cables">Section&nbsp;5.3</a></p>
+</section>
+<section id="computers" class="level3">
+<h3 class="anchored" data-anchor-id="computers">Computers</h3>
+</section>
+</section>
+<section id="testing" class="level2">
+<h2 class="anchored" data-anchor-id="testing">Testing</h2>
+<p>Use high impedance or open circuit electrodes. An electrode with infinite impedance is a perfect antenna</p>
+</section>
+<section id="case-studies" class="level2">
+<h2 class="anchored" data-anchor-id="case-studies">Case Studies</h2>
+<section id="sec-electronics-inside-the-cage" class="level3">
+<h3 class="anchored" data-anchor-id="sec-electronics-inside-the-cage">Components inside the Cage</h3>
+<p>Lights</p>
+<p>Lasers</p>
+<p>Experimental Control</p>
+</section>
+<section id="sec-case-ungrounded-cables" class="level3">
+<h3 class="anchored" data-anchor-id="sec-case-ungrounded-cables">Ungrounded Camera and Lighting</h3>
+</section>
+<section id="sec-unplugged-power-cables" class="level3">
+<h3 class="anchored" data-anchor-id="sec-unplugged-power-cables">Unplugged Power Cables</h3>
+<p>Noisy ground then radiates into cold side of the rack through ground BNC terminals</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
