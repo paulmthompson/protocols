@@ -6,3 +6,23 @@ format:
   html:
     code-fold: true
 ---
+
+Solutions to make
+
+1x PBS from 10X PBS
+
+10% Sucrose in DI water
+
+30% Sucrose in PBS
+
+0.1 M Phosphate Buffer
+
+0.3% PBST
+
+10% Blocking One / 0.3% PBST
+
+CUBIC-L
+
+ACSF
+
+2% Agarose in ACSF

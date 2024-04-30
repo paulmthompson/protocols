@@ -1,0 +1,64 @@
+---
+title: "Deep Learning for Neuroscience"
+author: "P. M. Thompson"
+bibliography: references.bib
+format:
+  html:
+    code-fold: true
+---
+
+## Model Types
+
+### Overall model structure
+
+### Classification
+
+### Regression
+
+### Semantic Segmentation
+
+### Keypoint Detection
+
+## Establish common sense baseline
+
+## Ensure data presentation to the model is accurate
+
+Data augmentation is working as expected
+
+Ensure that labels and data align
+
+## Model Development and Revision
+
+Are you data limited, head-parameter-limited, or feature limited?
+
+### Sample-limited
+
+For many industrial machine learning projects, this may not be of much concern. However for neuroscience where we are usually doing labeling ourselves at the expense of experiment time, we are usually right at the edge of having enough data so that our model can learn.
+
+If changes in the number of training samples greatly impacts performance, we are sample limited
+
+Note that when we are sample limited, it is difficult to assess potential benefits our model may have from increases in complexity.
+
+Create samples vs quality metric curve - determine if sample limited or not
+
+Anytime you increase parameter count, you need to re-asses if you are data-limited.
+
+### Head-Parameter Limited
+
+If you increase size of dense layer or stack dense layer, does quality metric improve?
+
+Keep in mind that increasing parameter number requires you to again check for data-limitation.
+
+### Feature-limited
+
+#### Can you increase feature size? 
+
+Use a larger base model (e.g. EfficientNetB1 vs EfficiennetB0).
+
+Add new feature dimension (e.g. add temporal component with LSTM)
+
+#### Can you focus features?
+
+Crop image around region of interest
+
+Add

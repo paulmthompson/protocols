@@ -6,3 +6,23 @@ format:
   html:
     code-fold: true
 ---
+
+## Version Control
+
+Github Account
+
+Git installation
+
+### VScode
+
+Autodocstring -\> configure for numpy doc
+
+Black formatting
+
+WSL
+
+Anaconda
+
+R and RStudio
+
+C++ Compiler
