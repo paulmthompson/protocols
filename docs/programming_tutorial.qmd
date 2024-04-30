@@ -1,0 +1,8 @@
+---
+title: "Programming Getting Started Guide"
+author: "P. M. Thompson"
+bibliography: references.bib
+format:
+  html:
+    code-fold: true
+---
